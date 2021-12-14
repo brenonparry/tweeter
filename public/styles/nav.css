@@ -1,0 +1,28 @@
+nav {
+  height: 110px;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title {
+  font-family: 'Bungee';
+  font-size: 1.5em;
+
+  display: flex;
+  /* align-self: flex-end; */
+
+}
+.fa-angle-double-down {
+  color: rgb(214, 70, 99);
+}
+
+.write-new-tweet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
