@@ -1,0 +1,19 @@
+header {
+  height: 500px;
+  width: 100vw;
+  padding: 5em;
+  background-color: #a16150;
+  background-image: url("https://www.transparenttextures.com/patterns/escheresque.png");
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
