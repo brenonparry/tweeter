@@ -1,5 +1,7 @@
 nav {
-  height: 110px;
+  position: absolute;
+  height: 120px;
+  width: 100vw;
   background-color: #4056A1;
   color: #FFFFFF;
   padding-left: 1.5em;
@@ -7,7 +9,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
+
 .title {
   font-family: 'Bungee';
   font-size: 1.5em;
@@ -18,11 +22,14 @@ nav {
 }
 .fa-angle-double-down {
   color: rgb(214, 70, 99);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 .write-new-tweet {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 
