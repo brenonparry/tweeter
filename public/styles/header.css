@@ -1,9 +1,9 @@
-header {
+header.main {
   height: 500px;
   width: 100vw;
   padding: 5em;
   background-color: #8fb5dd;
-  background-image: url("https://www.transparenttextures.com/patterns/escheresque.png");
+  background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png");
 }
 
 .avatar {

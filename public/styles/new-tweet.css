@@ -1,4 +1,5 @@
 .new-tweet {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,6 +10,9 @@ button.tweet-button {
   font-family: 'Bungee';
   color: #FFFFFF;
   background-color: #4056A1;
+  border-radius: 3px;
+  /* background-color: rgba(64, 86, 161, 0.6); */
+  /* background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png"); */
 }
 
 textarea#tweet-text {
