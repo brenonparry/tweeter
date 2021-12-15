@@ -2,7 +2,7 @@ header {
   height: 500px;
   width: 100vw;
   padding: 5em;
-  background-color: #a16150;
+  background-color: #8fb5dd;
   background-image: url("https://www.transparenttextures.com/patterns/escheresque.png");
 }
 
@@ -12,9 +12,18 @@ header {
   align-items: center;
 }
 
+
 .name {
   color: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.username {
+  padding-left: .2em;
+  padding-right: .2em;
+  border-radius: 5px;
+  background-color: rgba(64, 86, 161, 0.6);
+  box-shadow: 5px 5px 5px slategray;
 }
