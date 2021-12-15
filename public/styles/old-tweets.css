@@ -1,5 +1,5 @@
 article {
-  border: 2px solid grey;
+  border: 2px solid rgb(111, 110, 110);
   border-radius: 10px;
   width: 66%;
   height: 130px;
@@ -10,7 +10,8 @@ article {
   background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png");
 }
 article:hover {
-  box-shadow: 10px 10px 10px rgba(33,33,33,.2); 
+  box-shadow: 10px 10px 10px rgba(33,33,33,.2);
+  background-color: white
 }
 
 .user-info {
