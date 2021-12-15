@@ -7,8 +7,12 @@ $(document).ready(function() {
     // let remainingCharacters = numOfCharacters - tweet;
 
     // console.log(remainingCharacters)
+    if ($('output').val() < 0) {
+      $('output').addClass("negative-counter")
+    } else {
+      $('output').removeClass("negative-counter")
+    }
 
-    
   });
 });
 

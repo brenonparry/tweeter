@@ -28,3 +28,7 @@ textarea#tweet-text {
   align-items: center;
   justify-content: space-between;
 }
+
+output.negative-counter {
+  color: red;
+}
