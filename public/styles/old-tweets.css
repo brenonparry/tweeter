@@ -1,0 +1,63 @@
+article {
+  border: 2px solid grey;
+  border-radius: 10px;
+  width: 66%;
+  height: 130px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: .5em;
+  
+  background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png");
+}
+article:hover {
+  box-shadow: 10px 10px 10px rgba(33,33,33,.2); 
+}
+
+.user-info {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+p.user {
+  font-size: medium;
+  margin: 0;
+}
+
+p.handle {
+  opacity: 0.5;
+  margin: 0;
+  font-size: medium;
+}
+
+.date {
+  font-size: x-small;
+}
+
+.footer {
+  opacity: 0.7;
+  border-top: 3px solid rgba(0, 0, 0, 0.72);
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 5px;
+  
+}
+
+.old-tweet {
+  font-size: medium;
+  margin-top: 2em;
+  margin-bottom: 0;
+  
+}
+
+.icons {
+  font-size: medium;
+}
+i:hover {
+  color: rgba(238, 201, 53, 0.864);
+}
