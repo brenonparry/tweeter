@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="/styles/old-tweets.css" type="text/css"/>
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
@@ -64,63 +65,7 @@
           </div>
         </form>
       </section>
-        <article name="full-tweet">
-          <header class="user-info">
-            <div>
-            <p class="user"><i class="fas fa-toilet"></i>    Turd Fergison</p>
-            </div>
-            <div>
-              <p class="handle">@Burt_ReyRey</p>
-            </div>
-          </header>
-          <p class="old-tweet">"Thats not my name."</p>
-          <div class="footer">
-            <div>
-              <p class="date">10 days ago</p>
-            </div>
-            <div class="icons">
-              <p><i class="fas fa-star"></i><i class="fas fa-retweet"></i><i class="fas fa-heart"></i></p>
-            </div>
-          </div>
-        </article>
-        <article name="full-tweet">
-          <header class="user-info">
-            <div>
-            <p class="user"><i class="fas fa-toilet"></i>    Burt Reynolds</p>
-            </div>
-            <div>
-              <p class="handle">@TurdFurgison</p>
-            </div>
-          </header>
-          <p class="old-tweet">"Yeah sure, gimmie s-words for $400"</p>
-          <div class="footer">
-            <div>
-              <p class="date">10 days ago</p>
-            </div>
-            <div class="icons">
-              <p><i class="fas fa-star"></i><i class="fas fa-retweet"></i><i class="fas fa-heart"></i></p>
-            </div>
-          </div>
-        </article>
-        <article name="full-tweet">
-          <header class="user-info">
-            <div>
-            <p class="user"><i class="fas fa-toilet"></i>    Harry Dunn</p>
-            </div>
-            <div>
-              <p class="handle">@Harry_Dunn</p>
-            </div>
-          </header>
-          <p class="old-tweet">"You cant stamp a double stamp"</p>
-          <header class="footer">
-              <p class="date">10 days ago</p>
-            <div class="icons">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-retweet"></i>
-              <i class="fas fa-heart"></i>
-            </div>
-          </header>
-        </article>
+      <section id="tweets-container"></section>
     </main>
   </body>
 </html>
