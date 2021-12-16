@@ -1,12 +1,15 @@
 #tweets-container {
   width: 66%;
+  /* display: flex;
+  flex-direction: column;
+   */
 }
 
 article {
   border: 2px solid rgb(111, 110, 110);
   border-radius: 10px;
-  width: 100%;
-  height: 130px;
+  /* width: 100%; */
+  /* height: 100%; */
   margin-top: 10px;
   margin-bottom: 10px;
   padding: .5em;
@@ -45,7 +48,7 @@ p.handle {
   opacity: 0.7;
   border-top: 3px solid rgba(0, 0, 0, 0.72);
   width: 100%;
-  height: 30px;
+  /* height: 30px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -58,7 +61,8 @@ p.handle {
   font-size: medium;
   margin-top: 2em;
   margin-bottom: 0;
-  
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
 }
 
 .icons {

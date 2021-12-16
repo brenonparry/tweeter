@@ -2,6 +2,7 @@
   width: 66%;
   display: flex;
   flex-direction: column;
+  
   /* align-items: center; */
 }
 
@@ -13,6 +14,14 @@ button.tweet-button {
   border-radius: 3px;
   /* background-color: rgba(64, 86, 161, 0.6); */
   /* background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png"); */
+}
+
+.toilet {
+  margin: 30px auto;
+}
+
+.greeting {
+  font-size: large;
 }
 
 textarea#tweet-text {
