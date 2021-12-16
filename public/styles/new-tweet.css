@@ -19,11 +19,13 @@ textarea#tweet-text {
   background-color: #f4f1ec;
   height: 30px;
   width: 100%;
+  font-size: medium;
   border: 2px solid transparent;
   border-bottom-color: #545149;
   border-bottom-width: 3px;
   border-radius: 3px;
   resize: none;
+  outline: none;
 }
 
 .button-counter {
