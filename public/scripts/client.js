@@ -4,45 +4,67 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-
-
-
+// (function( ) { })( )
 $(document).ready(() => {
-const data = [
-  {
-    "user": {
-      "name": "Newton",
-      "avatars": "https://i.imgur.com/73hZDYK.png"
-      ,
-      "handle": "@SirIsaac"
-    },
-    "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
-    },
-    "created_at": 1461116232227
-  },
-  {
-    "user": {
-      "name": "Descartes",
-      "avatars": "https://i.imgur.com/nlhLi3I.png",
-      "handle": "@rd" },
-    "content": {
-      "text": "Je pense , donc je suis"
-    },
-    "created_at": 1461113959088
+
+
+  $('#tweet').on('submit', (event) => {
+    event.preventDefault();
+    
+    // console.log("event: ", event)
+    // console.log("Pre-serialize: ", $('#tweet'));
+    const $tweet = $('#tweet').serialize()
+    // console.log("$tweet: ", $tweet)
+  
+
+    $.ajax({
+      url: '/tweets/',
+      method: 'POST',
+      data: $tweet
+    })
+    .then(function () {
+      $('#tweets-container').html('');
+      loadTweets();
+      // $.ajax({
+      //   url: "/tweets/", 
+      //   method: "GET"
+      // })
+      // .then(function(data) { 
+      //   createTweetElement(data[data.length -1])
+      // })
+      // createTweetElement($tweet);
+    })
+    .catch(function (error) {
+      console.log("Error: ", error)
+    })
+  })
+
+  const loadTweets = function() {
+    $.ajax({
+      url: "/tweets/",
+      method: "GET"
+    })
+      .then(function (data) {
+        renderTweets(data.reverse());
+      })
+      .catch(function (error) {
+        console.log("Error: ", error)
+      })
+    }
+  loadTweets();
+
+
+
+  const renderTweets = function(tweets) {
+    for(const tweet of tweets) {
+      $(`#tweets-container`).append(createTweetElement(tweet))
+    }
   }
-]
 
-const renderTweets = function(tweets) {
- for(const tweet of tweets) {
-
-  createTweetElement(tweet);
- }
-}
-
-const createTweetElement = function(tweet) {
-let $tweet = $(`
-<article class="full-tweet">
+  const createTweetElement = function(tweet) {
+    // console.log("TWEET: ", tweet)
+   let $tweet = $(`
+       <article class="full-tweet">
           <header class="user-info">
             <div>
             <p class="user"><i class="fas fa-toilet"></i>    ${tweet.user.name}</p>
@@ -61,13 +83,8 @@ let $tweet = $(`
             </div>
           </header>
         </article>
-`)
-
-$(`#tweets-container`).append($tweet)
-
-}
-
-renderTweets(data);
-
+      `)
+    return $tweet;
+  }
 });
 
