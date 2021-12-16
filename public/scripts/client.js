@@ -20,23 +20,11 @@ $(document).ready(() => {
     $.ajax({
       url: '/tweets/',
       method: 'POST',
-      data: $tweet
+      data: $tweet,
+      success: loadTweets
     })
-    .then(function () {
-      $('#tweets-container').html('');
-      loadTweets();
-      // $.ajax({
-      //   url: "/tweets/", 
-      //   method: "GET"
-      // })
-      // .then(function(data) { 
-      //   createTweetElement(data[data.length -1])
-      // })
-      // createTweetElement($tweet);
-    })
-    .catch(function (error) {
-      console.log("Error: ", error)
-    })
+    $('#tweet-text').val('');
+  
   })
 
   const loadTweets = function() {
@@ -47,15 +35,13 @@ $(document).ready(() => {
       .then(function (data) {
         renderTweets(data.reverse());
       })
-      .catch(function (error) {
-        console.log("Error: ", error)
-      })
     }
   loadTweets();
 
 
 
   const renderTweets = function(tweets) {
+    $('#tweets-container').html('');
     for(const tweet of tweets) {
       $(`#tweets-container`).append(createTweetElement(tweet))
     }
