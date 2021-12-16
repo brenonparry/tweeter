@@ -62,7 +62,7 @@ $(document).ready(() => {
        <article class="full-tweet">
           <header class="user-info">
             <div>
-            <p class="user"><i class="fas fa-toilet"></i>    ${tweet.user.name}</p>
+            <p class="user"><i class="fas fa-toilet-paper"></i>    ${tweet.user.name}</p>
             </div>
             <div>
               <p class="handle">${tweet.user.handle}</p>
