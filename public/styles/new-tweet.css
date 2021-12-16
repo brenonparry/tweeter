@@ -55,3 +55,12 @@ textarea#tweet-text {
 output.negative-counter {
   color: red;
 }
+
+#error {
+  font-size: x-small;
+  color: red;
+  border: 2px solid red;
+
+  display: flex;
+  justify-content: center;
+}

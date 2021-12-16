@@ -4,6 +4,7 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+
 // (function( ) { })( )
 $(document).ready(() => {
 
@@ -20,6 +21,11 @@ $(document).ready(() => {
       return alert("What are you even doing?!")
     }
     
+    // if (textBox.length === 0) {
+    //   $('#error').slideDown(1000);
+    //   $('#error').text("Ya can't flush nothing! It's a waste of water");
+      
+    // }
     // console.log("event: ", event)
     // console.log("Pre-serialize: ", $('#tweet'));
     const $tweet = $('#tweet').serialize()
