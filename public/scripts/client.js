@@ -10,6 +10,15 @@ $(document).ready(() => {
 
   $('#tweet').on('submit', (event) => {
     event.preventDefault();
+    // console.log($('#tweet-text').val().length)
+    const textBox = $('#tweet-text').val();
+    if (textBox.length > 140) {
+     return alert("AhAhAh Not Right Now");
+    } else if (textBox === "") {
+      return alert("Tweet cannot be empty!")
+    } else if (textBox === null) {
+      return alert("What are you even doing?!")
+    }
     
     // console.log("event: ", event)
     // console.log("Pre-serialize: ", $('#tweet'));
