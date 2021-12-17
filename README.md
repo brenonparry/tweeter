@@ -6,7 +6,9 @@ What about the current internet-climate makes every user of every social platfor
 
 Enter: SHITTER.
 
-A place for everyone's shit opinions that can be flushed into the overwhelming nothing of social media. Your co-workers thoughts on politics? FLUSH. Karen's oatmeal raisin cookie recipe? FLUSH. Your mom's sister parrot singing backstreet boys? F-L-U-S-H. You get the idea.
+A place for everyone's shit opinions that can be flushed into the overwhelming nothing of social media. Designed to place you in the digital bathroom stall of the internet, where poorly spelled marker written opionions are like the oil spill of the Exxon Valdez...endeless.
+
+Your co-workers thoughts on politics? FLUSH. Karen's oatmeal raisin cookie recipe? FLUSH. Your mom's sister parrot singing backstreet boys? F-L-U-S-H. You get the idea.
 
 
 ## Screenshots
