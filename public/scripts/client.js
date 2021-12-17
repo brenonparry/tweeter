@@ -11,27 +11,19 @@ $(document).ready(() => {
 
   $('#tweet').on('submit', (event) => {
     event.preventDefault();
-    // console.log($('#tweet-text').val().length)
-    const textBox = $('#tweet-text').val();
-    if (textBox.length > 140) {
-     return alert("AhAhAh Not Right Now");
-    } else if (textBox === "") {
-      return alert("Tweet cannot be empty!")
-    } else if (textBox === null) {
-      return alert("What are you even doing?!")
-    }
-    
-    // if (textBox.length === 0) {
-    //   $('#error').slideDown(1000);
-    //   $('#error').text("Ya can't flush nothing! It's a waste of water");
-      
-    // }
-    // console.log("event: ", event)
-    // console.log("Pre-serialize: ", $('#tweet'));
-    const $tweet = $('#tweet').serialize()
-    // console.log("$tweet: ", $tweet)
   
-
+    const textBox = $('#tweet-text').val();
+    
+    $('#error').slideUp('fast');
+    if (textBox.length === 0) {
+      $('#error').html(`<i class="fas fa-toilet-paper-slash"></i> Ya can't flush nothing! It's a waste of water <i class="fas fa-toilet-paper-slash"></i>`).slideDown('fast');
+    } else if (textBox.length > 140) {
+      return $('#error').html(`<i class="fas fa-toilet-paper-slash"></i> Your shit is too big to flush! Big oof. <i class="fas fa-toilet-paper-slash"></i>`).slideDown('fast');
+    };
+    
+    const $tweet = $('#tweet').serialize()
+   
+  
     $.ajax({
       url: '/tweets/',
       method: 'POST',
