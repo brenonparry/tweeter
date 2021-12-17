@@ -28,7 +28,9 @@ button.tweet-button {
 }
 
 .greeting {
+  padding-left: .1em;
   font-size: large;
+  font-family: 'Permanent Marker';
 }
 
 textarea#tweet-text {
@@ -57,10 +59,14 @@ output.negative-counter {
 }
 
 #error {
-  font-size: x-small;
-  color: red;
-  border: 2px solid red;
-
-  display: flex;
-  justify-content: center;
+  font-size: medium;
+  color:rgb(254,103,17);
+  border: 2px solid rgb(254,103,17);
+  border-radius: 3px;
+  background-color: rgba(255,150,92, 0.2);
+  width: 50vw;
+  margin: auto;
+  padding: .5em;
+  display: none;
+  text-align: center;
 }
