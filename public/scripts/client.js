@@ -31,7 +31,7 @@ $(document).ready(() => {
       success: loadTweets
     })
     $('#tweet-text').val('');
-  
+    $('.counter').val(140)
   })
 
   const loadTweets = function() {
@@ -55,7 +55,7 @@ $(document).ready(() => {
   }
 
   const createTweetElement = function(tweet) {
-    // console.log("TWEET: ", tweet)
+    
    let $tweet = $(`
        <article class="full-tweet">
           <header class="user-info">
