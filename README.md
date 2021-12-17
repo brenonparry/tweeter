@@ -11,9 +11,9 @@ A place for everyone's shit opinions that can be flushed into the overwhelming n
 
 ## Screenshots
 
-!["Shitter home"]()
-!["Shitter-Flushes]()
-![Shitter-Desktop]()
+!["Shitter home"](https://github.com/brenonparry/tweeter/blob/master/docs/Shitter-home.png)
+!["Shitter-Flushes](https://github.com/brenonparry/tweeter/blob/master/docs/Shitter-tweets.png)
+![Shitter-Desktop](https://github.com/brenonparry/tweeter/blob/master/docs/Shitter-desktop.png)
 
 Below are instructions to get Shitter up and running. 
 
