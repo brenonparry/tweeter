@@ -1,17 +1,15 @@
+/* STYLES FOR THE NEW-TWEETS CONTAINER */
+
+
 .new-tweet {
   width: 100%;
   display: flex;
   flex-direction: column;
   margin-bottom: 1em;
   
-  /* align-items: center; */
 }
 
-/* #tweet {
-  border: 1px solid #545149;
-  box-shadow: 10px 10px 10px rgba(33,33,33,.2);
-  border-radius: 3px;
-} */
+
 
 button.tweet-button {
   font-size: 16px;
@@ -19,8 +17,7 @@ button.tweet-button {
   color: #FFFFFF;
   background-color: #4056A1;
   border-radius: 3px;
-  /* background-color: rgba(64, 86, 161, 0.6); */
-  /* background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png"); */
+
 }
 
 .toilet {
@@ -54,11 +51,13 @@ textarea#tweet-text {
   justify-content: space-between;
 }
 
+/* Negative number style */
 output.negative-counter {
   color: red;
 }
 
-#error {
+/* ERROR styles */
+#error { 
   font-size: medium;
   color:rgb(254,103,17);
   border: 2px solid rgb(254,103,17);

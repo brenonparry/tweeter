@@ -1,3 +1,6 @@
+/* STYLE FOR THE TWEETS FEED */
+
+
 #tweets-container {
   width: 100%;
 }
@@ -5,8 +8,6 @@
 article {
   border: 2px solid rgb(111, 110, 110);
   border-radius: 10px;
-  /* width: 100%; */
-  /* height: 100%; */
   margin-top: 10px;
   margin-bottom: 10px;
   padding: .5em;
@@ -26,18 +27,23 @@ article:hover {
   justify-content: space-between;
 }
 
+.icon-user {
+  display: flex;
+}
 p.user {
-  font-size: medium;
+  font-size: large;
   margin: 0;
+  padding-left: .5em;
 }
 
 p.handle {
-  opacity: 0.5;
+  opacity: 0.8;
   margin: 0;
   font-size: medium;
 }
 
 .date {
+  color: rgb(10, 10, 10);
   font-size: x-small;
 }
 
@@ -45,7 +51,6 @@ p.handle {
   opacity: 0.7;
   border-top: 3px solid rgba(0, 0, 0, 0.72);
   width: 100%;
-  /* height: 30px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -55,9 +60,9 @@ p.handle {
 }
 
 .old-tweet {
-  font-size: large;
+  font-size: xx-large;
   font-family: 'Covered By Your Grace';
-  margin-top: 2em;
+  margin-top: 1em;
   margin-bottom: 0;
   white-space: pre-wrap;
   overflow-wrap: break-word;

@@ -34,11 +34,6 @@ body {
 }
 
 
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
-
  /* Smartphone styles */
  @media only screen and (max-width: 420px) {
   
@@ -48,26 +43,30 @@ body {
 @media only screen and (min-width: 1024px) {
 
   body {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
-    height: 100vmax;
-    /* width: 90vmax; */
-    margin-left: 1em;
-    margin-right: 1em;
-
+    justify-content: flex-end;
+    align-items: stretch;
+    display: flex !important;
+    justify-content: space-between !important;
+  
+    align-content: flex-end;
+    flex-wrap: wrap;
   }
 
-  /* nav {
-
-  } */
-
   header.main {
-    margin-right: 1em;
-    margin-top: 20%;
+  
+    margin-top: 120px;
     border-radius: 8px;
-    flex-shrink: 70;
+    box-shadow: 5px 5px 5px rgba(89, 116, 187, 0.5);
+    z-index: 1;
+    width: 40% !important;
+    position: fixed;
+    float: left !important;
+    height: 100vh !important;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+
+
   }
 
   h2.username {
@@ -75,11 +74,10 @@ body {
   }
 
   main.container {
-    display: flex;
-    flex-direction: column;
-    height: 100vw;
-    margin-top: 120px;
 
+    margin-top: 120px;
+    width: 60%;
+  
   }
 
   
