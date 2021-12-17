@@ -12,7 +12,7 @@ $(document).ready(function() {
     } else {
       $('output').removeClass("negative-counter")
     }
-
+    
   });
 });
 
