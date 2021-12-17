@@ -39,35 +39,49 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- /* Desktop styles */
-@media only screen and (min-width: 960px) {
-  header.main {
-    width: 33.3vw;
-    float: left;
+ /* Smartphone styles */
+ @media only screen and (max-width: 420px) {
+  
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    height: 100vmax;
+    /* width: 90vmax; */
+    margin-left: 1em;
+    margin-right: 1em;
+
   }
 
-  /* .feature {
-    line-height: 300px;
+  /* nav {
+
   } */
 
-  /* .menu {
-    background-color: #111111;
-    color: #f0f0f0;
-    text-align: left;
-  } */
+  header.main {
+    margin-right: 1em;
+    margin-top: 20%;
+    border-radius: 8px;
+    flex-shrink: 70;
+  }
 
-  /* .tagline {
-    display: inline;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 12px;
-    color: tomato;
-    float: right;
-  } */
+  h2.username {
+    font-size: xx-large;
+  }
 
-  /* .main {
-    max-width: 1024px;
-    font-size: 16px;
-    margin: 0 auto;
-  } */
+  main.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vw;
+    margin-top: 120px;
+
+  }
+
+  
+  
 }
